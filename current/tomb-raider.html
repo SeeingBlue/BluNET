@@ -1,0 +1,545 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BluNET - Home of Ultimate Twitch Bot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<meta charset="UTF-8">
+		<meta name="description" content="Tomb Raider(2013) playthrough and game review.">
+		<meta name="keywords" content="tomb, raider, 2013, blunet, seeingblue, gaming, reviews">
+		  	<style type="text/css">
+
+  		.title {
+  			width: 100%;
+  			max-width: 854px;
+  			margin: 0 auto;
+  		}
+
+  		.caption {
+  			width: 100%;
+  			max-width: 854px;
+  			margin: 0 auto;
+  			padding: 20px 0;
+  		}
+
+  		/*  VIDEO PLAYER CONTAINER
+ 		############################### */
+  		.vid-container {
+		    position: relative;
+		    padding-bottom: 52%;
+		    padding-top: 30px; 
+		    height: 0; 
+		}
+		 
+		.vid-container iframe,
+		.vid-container object,
+		.vid-container embed {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		}
+
+
+		/*  VIDEOS PLAYLIST 
+ 		############################### */
+		.vid-list-container {
+			width: 92%;
+			overflow: hidden;
+			margin-top: 20px;
+			margin-left:4%;
+			padding-bottom: 5px !important;
+		}
+
+		.vid-list {
+			width: 1344px;
+			position: relative;
+			top:0;
+			left: 0;
+		}
+
+		.vid-item {
+			display: block;
+			width: 148px;
+			height: 148px;
+			float: left;
+			margin: 0;
+			padding: 10px;
+		}
+
+		.thumb {
+			/*position: relative;*/
+			overflow:hidden;
+			height: 84px;
+		}
+
+		.thumb img {
+			width: 100%;
+			position: relative;
+			top: 0px !important;
+		}
+
+		.vid-item .desc {
+			color: #21A1D2;
+			font-size: 15px;
+			margin-top:5px;
+		}
+
+		.vid-item:hover {
+			background: #eee;
+			cursor: pointer;
+		}
+
+		.arrows {
+			position:relative;
+			width: 100%;
+			height: 40px;
+		}
+
+		.arrow-left {
+			color: #fff;
+			position: absolute;
+			background: #777;
+			padding: 15px;
+			left: -25px;
+			top: -130px;
+			z-index: 99;
+			cursor: pointer;
+		}
+
+		.arrow-right {
+			color: #fff;
+			position: absolute;
+			background: #777;
+			padding: 15px;
+			right: -25px;
+			top: -130px;
+			z-index:100;
+			cursor: pointer;
+		}
+
+		.arrow-left:hover {
+			background: #CC181E;
+		}
+
+		.arrow-right:hover {
+			background: #CC181E;
+		}
+
+
+		@media (max-width: 624px) {
+			body {
+				margin: 15px;
+			}
+			.caption {
+				margin-top: 40px;
+			}
+			.vid-list-container {
+				padding-bottom: 20px;
+			}
+
+			/* reposition left/right arrows */
+			.arrows {
+				position:relative;
+				margin: 0 auto;
+				width:96px;
+			}
+			.arrow-left {
+				left: 0;
+				top: -17px;
+			}
+
+			.arrow-right {
+				right: 0;
+				top: -17px;
+			}
+		}
+
+  	</style>
+
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">BluNET <em>- Home of Ultimate Twitch Bot</em></a></h1>
+						<ul class="icons">
+							<li><a href="https://twitter.com/sBlueS2" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/seeingblues2" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.youtube.com/user/SeeingBlue" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+							<li><a href="https://www.twitch.tv/SeeingBlue" class="icon fa-twitch"><span class="label">Twitch</span></a></li>
+							<li><a href="https://www.instagram.com/SeeingBlueS2" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="http://steamcommunity.com/groups/blunet" class="icon fa-steam"><span class="label">Steam</span></a></li>
+							<li><a href="https://paypal.me/seeingblue" class="icon fa-paypal"><span class="label">Paypal</span></a></li>
+						</ul>
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="utb/index.html">Ultimate Twitch Bot</a>
+									<ul>
+										<li><a href="utb/index.html#features">Features</a></li>
+										<li><a href="utb/index.html#gallery">Gallery</a></li>
+										<li><a href="utb/index.html#download">Download</a></li>
+										<li><a href="forum/index.php?topic=2.0">Support</a></li>
+										<!--<li>
+											<a href="#">Submenu</a>
+											<ul>
+												<li><a href="#">Lorem dolor</a></li>
+												<li><a href="#">Phasellus magna</a></li>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+											</ul>
+										</li>-->
+									</ul>
+								</li>
+								<li><a target="_blank" href="http://twitch.tv/seeingblue">Twitch</a>
+									<ul><li><a href="schedule.html">Schedule</a></li></ul>
+								</li>
+								<li class="current"><a href="#">Game Reviews</a>
+									<ul>
+										<li><a href="tomb-raider.html">Tomb Raider</a></li>
+										<li><a href="metal-gear-solid-v.html">MSGV: Phantom Pain</a></li>
+										<!--<li><a href="utb/index.html#gallery">Gallery</a></li>
+										<li><a href="utb/index.html#download">Download</a></li>
+										<li><a href="#">Support</a></li>
+										<!--<li>
+											<a href="#">Submenu</a>
+											<ul>
+												<li><a href="#">Lorem dolor</a></li>
+												<li><a href="#">Phasellus magna</a></li>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+											</ul>
+										</li>-->
+									</ul>
+								</li>
+								<li><a href="">Community</a>
+								<ul>
+										<!--<li><a href="#">Wiki</a></li>-->
+										<li><a href="/forum">Forums</a></li>
+										<li><a href="https://discordapp.com/invite/0oYgnrbPAnSym5s5">Discord Server</a></li>
+								</ul></li>
+								<!--<li><a href="no-sidebar.html">No Sidebar</a></li>-->
+							</ul>
+						</nav>
+				</div>
+				<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<h2>Show your support and recieve amazing benefits</h2>
+							<a href="/forum/index.php?action=profile;area=subscriptions" class="button">Subscribe Now!</a>
+						</header>
+					</div>
+				</section>
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- tombraiderMain -->
+					<ins class="adsbygoogle"
+					     style="display:block"
+					     data-ad-client="ca-pub-7742234341446384"
+					     data-ad-slot="5408537158"
+					     data-ad-format="auto"></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+						<div class="row 200%">
+							<div class="8u 12u(narrower)">
+								<div id="content">
+									<!-- Content -->
+										<article>
+											<header>
+												<h2>Tomb Raider(2013)</h2>
+												<p>First blind play-through and eventual full review.</p>
+											</header>
+											<a href="https://www.youtube.com/playlist?list=PLR9g-9auRPQDAWewNxK-CXo0B_EpM-6Tx">Full Playlist</a>
+
+  		<!-- THE YOUTUBE PLAYER -->
+  		<div class="vid-container">
+		    <iframe id="vid_frame" src="https://www.youtube.com/embed/W-Y512RlFmE" frameborder="0" width="560" height="315"></iframe>
+		</div>
+
+		<!-- THE PLAYLIST -->
+		<div class="vid-list-container">
+	        <div class="vid-list">
+	         	
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/qEOY19ce-yM'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/qEOY19ce-yM/0.jpg"></div>
+ 	              <div class="desc">Tomb Raider Play-through - Hours 01:45 - 03:25</div>
+ 	            </div>
+ 	          
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/qEOY19ce-yM'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/qEOY19ce-yM/0.jpg"></div>
+ 	              <div class="desc">Tomb Raider Play-through - Hours 01:45 - 03:15</div>
+ 	            </div>
+
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/iqE-SWVbAsA'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/iqE-SWVbAsA/0.jpg"></div>
+ 	              <div class="desc">Tomb Raider Play-through - Hours 03:15 - 04:15 Pt1</div>
+ 	            </div>
+
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/T2O3iI7x74E'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/T2O3iI7x74E/0.jpg"></div>
+ 	              <div class="desc">Tomb Raider Play-through - Hours 03:25 - 04:25 Pt2</div>
+ 	            </div>
+
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/eOrZwKo264Q'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/eOrZwKo264Q/0.jpg"></div>
+ 	              <div class="desc">Tomb Raider Play-through - Hours 04:15 - 05:45 Pt1</div>
+ 	            </div>
+
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/_v8bcck8jio'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/_v8bcck8jio/0.jpg"></div>
+ 	              <div class="desc">Tomb Raider Play-through - Hours 04:15 - 05:45 Pt2</div>
+ 	            </div>
+ 	          
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/R4qWX_BYvJU'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/R4qWX_BYvJU/0.jpg"></div>
+ 	              <div class="desc">Tomb Raider Play-through - Hours 04:15 - 05:45 Pt3</div>
+ 	            </div>
+ 	            
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/AeejZvG5b14'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/AeejZvG5b14/0.jpg"></div>
+ 	              <div class="desc">Tomb Raider Play-through - Hours 05:45 - 07:50</div>
+ 	            </div>
+ 	            
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/DJHZgczHxqo'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/DJHZgczHxqo/0.jpg"></div>
+ 	              <div class="desc">Tomb Raider Play-through - Hours 07:50 - 08:40</div>
+ 	            </div>
+
+	 	    </div>
+        </div>
+
+        <!-- LEFT AND RIGHT ARROWS -->
+        <div class="arrows">
+        	<div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+        	<div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+        </div>
+
+											<p>Tomb Raider II was one my favorite games on the playstation. I spent countless hours and never beat it.
+												I dabbled in the other edition but it wasn't until this game came out that I decided to pick it back up and see what it was like again.
+												I expected puzzles, I expected confusion, I even expected to be startled once or twice, but does the game live up to my nostalgic hype and stay true to the orginals?</p>
+
+											<h2>Full Review and Conclusion</h2>
+											<p>I decided to judge this game based on Gameplay: How fun was the game, how does it compare to the originals, Graphics: Is it visually appealing, and Stability: How well does it play?
+												I will rate each topic and speak on why I rated it that way. Let's begin...</p>
+											<h3>Gameplay: 5</h3>
+											<p>That is a pretty low rating in my book. It's not unplayable but I was pretty unsatified with the gameplay. Let's start with Quicktime Events.
+												I hate them, but that's a personal opinion. The quicktime events were not enjoyable for me personally and coupled with the fact that you didn't know when to expect them
+												and often the game would give you control during a cutscene and you were dead before realizing it.</p>
+											<p>This installement of Tomb Raider did not feel like the orginal Tomb Raiders. Lara did not feel like or even look similar to the Lara we all know.
+												This Lara was blood thirsty, there was way to much combat to feel like a Tomb Raider. The game still had plenty of puzzles but overall it felt like 
+												a shooter.</p>
+											<p>The best parts where transversing the terrain. The running, climbing, jumping, hanging, shimming, these were the parts that felt like Tomb Raider and these were the parts I
+												enjoyed the most, I just wish there was more of this and less combat. I am also upset that I was never chased by a boulder.</p>
+											<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+											<!-- MSGArticle -->
+											<ins class="adsbygoogle"
+											     style="display:block"
+											     data-ad-client="ca-pub-7742234341446384"
+												 data-ad-slot="1357637156"
+										     	 data-ad-format="auto"></ins>
+											<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+											</script>
+											<h3>Graphics: 8</h3>
+											<p>I thought the graphics were great. I had no issues here. Everything looked very satisfying and I did not notice any graphical glitches or issues. So I rated this about as good
+												as it gets other than just being blown away by something revolutionary.</p>
+											<h3>Stability: 8</h3>
+											<p>Not a whole lot to say here. The game performed excellent. I had no bugs, no glitches, no crashes. Everything ran very smooth.</p>
+											<h2>Overall: 6</h2>
+											<p>This is a pretty sad overall rating. Unfortunately the graphics and stability are not enough to save this game. I was overall disappointed. The story did not capture me.
+												I was not a fan of quicktime events. I was not a fan of the constant combat. I wanted more puzzles, traps, and terrain transversing. I was pretty let down by this game
+												and was rushing to the end just to get it over with. I would not recommend this game to anyone, even a Tomb Raider fan. This is a thumbs down and a pass.</p>
+											<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+											<!-- tombraiderMain2 -->
+											<ins class="adsbygoogle"
+											     style="display:block"
+												 data-ad-client="ca-pub-7742234341446384"
+											     data-ad-slot="7943201159"
+											     data-ad-format="auto"></ins>
+											<script>
+												(adsbygoogle = window.adsbygoogle || []).push({});
+											</script>
+										</article>
+								</div>
+							</div>
+							
+							<div class="4u 12u(narrower)">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+
+										<section>
+											<h3>About</h3>
+											<p>All reviews here are submitted by SeeingBlue. All opinions are his alone. Games are rated on various aspects like gameplay, stability, longivity, etc... All games a played live on Twitch before being highlighted and reviewed here.</p>
+											<footer>
+												<!--<a href="#" class="button">Previous: N/A</a>-->
+											</footer>
+										</section>
+
+										<section>
+											<h3>Other Game Reviews</h3>
+											<ul class="links">
+												<li><a href="metal-gear-solid-v.html">Metal Gear Solid 5: The Phantom Pain</a></li>
+												<!--<li><a href="#">Semper mod quis eget mi dolore</a></li>
+												<li><a href="#">Consequat etiam lorem phasellus</a></li>
+												<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+												<li><a href="#">Semper mod quisturpis nisi</a></li>-->
+											</ul>
+											<footer>
+												<a href="metal-gear-solid-v.html" class="button">Next: MGSV: The Phantom Pain</a>
+											</footer>
+											<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+											<!-- tombraiderSidebar -->
+											<ins class="adsbygoogle"
+											     style="display:block"
+											     data-ad-client="ca-pub-7742234341446384"
+											     data-ad-slot="9419934356"
+											     data-ad-format="auto"></ins>
+											<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+											</script>
+										</section>
+
+								</div>
+							</div>
+					</div>
+					</div>
+				</section>
+									<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<h2>Show your support and recieve amazing benefits</h2>
+							<a href="/forum/index.php?action=profile;area=subscriptions" class="button">Subscribe Now!</a>
+						</header>
+					</div>
+				</section>
+			<!-- Footer -->
+				<div id="footer">
+
+					<!--<div class="container">
+						<div class="row">
+							<section class="3u 6u(narrower) 12u$(mobilep)">
+								<h3>Links to Stuff</h3>
+								<ul class="links">
+									<li><a href="#">Mattis et quis rutrum</a></li>
+									<li><a href="#">Suspendisse amet varius</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum accumsan dolor</a></li>
+									<li><a href="#">Mattis rutrum accumsan</a></li>
+									<li><a href="#">Suspendisse varius nibh</a></li>
+									<li><a href="#">Sed et dapibus mattis</a></li>
+								</ul>
+							</section>
+							<section class="3u 6u$(narrower) 12u$(mobilep)">
+								<h3>More Links to Stuff</h3>
+								<ul class="links">
+									<li><a href="#">Duis neque nisi dapibus</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum accumsan sed</a></li>
+									<li><a href="#">Mattis et sed accumsan</a></li>
+									<li><a href="#">Duis neque nisi sed</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum amet varius</a></li>
+								</ul>
+							</section>
+							<section class="6u 12u(narrower)">
+								<h3>Get In Touch</h3>
+								<form>
+									<div class="row 50%">
+										<div class="6u 12u(mobilep)">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="6u 12u(mobilep)">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<ul class="actions">
+												<li><input type="submit" class="button alt" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div>-->
+
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/sBlueS2" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/seeingblues2" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.youtube.com/user/SeeingBlue" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+							<li><a href="https://www.twitch.tv/SeeingBlue" class="icon fa-twitch"><span class="label">Twitch</span></a></li>
+							<li><a href="https://www.instagram.com/SeeingBlueS2" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="http://steamcommunity.com/groups/blunet" class="icon fa-steam"><span class="label">Steam</span></a></li>
+							<li><a href="https://paypal.me/seeingblue" class="icon fa-paypal"><span class="label">Paypal</span></a></li>
+						</ul>
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; BluNET. All rights reserved</li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+			$(document).ready(function () {
+    $(".arrow-right").bind("click", function (event) {
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollLeft: "+=336"
+        }, 750);
+    });
+    $(".arrow-left").bind("click", function (event) {
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollLeft: "-=336"
+        }, 750);
+    });
+});
+</script>
+			<script>
+  				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  				ga('create', 'UA-4636650-2', 'auto');
+  				ga('send', 'pageview');
+
+			</script>
+
+	</body>
+</html>

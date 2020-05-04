@@ -1,0 +1,544 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BluNET - Home of Ultimate Twitch Bot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<meta charset="UTF-8">
+		<meta name="description" content="Metal Gear Solid V: The Phantom Pain Game Review by BluNET">
+		<meta name="keywords" content="metal, gear, solid, v, game, review, blunet, TTP, the, phantom, pain, pc">
+		  	<style type="text/css">
+
+  		.title {
+  			width: 100%;
+  			max-width: 854px;
+  			margin: 0 auto;
+  		}
+
+  		.caption {
+  			width: 100%;
+  			max-width: 854px;
+  			margin: 0 auto;
+  			padding: 20px 0;
+  		}
+
+  		/*  VIDEO PLAYER CONTAINER
+ 		############################### */
+  		.vid-container {
+		    position: relative;
+		    padding-bottom: 52%;
+		    padding-top: 30px; 
+		    height: 0; 
+		}
+		 
+		.vid-container iframe,
+		.vid-container object,
+		.vid-container embed {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		}
+
+
+		/*  VIDEOS PLAYLIST 
+ 		############################### */
+		.vid-list-container {
+			width: 92%;
+			overflow: hidden;
+			margin-top: 20px;
+			margin-left:4%;
+			padding-bottom: 5px !important;
+		}
+
+		.vid-list {
+			width: 1344px;
+			position: relative;
+			top:0;
+			left: 0;
+		}
+
+		.vid-item {
+			display: block;
+			width: 148px;
+			height: 148px;
+			float: left;
+			margin: 0;
+			padding: 10px;
+		}
+
+		.thumb {
+			/*position: relative;*/
+			overflow:hidden;
+			height: 84px;
+		}
+
+		.thumb img {
+			width: 100%;
+			position: relative;
+			top: 0px !important;
+		}
+
+		.vid-item .desc {
+			color: #21A1D2;
+			font-size: 15px;
+			margin-top:5px;
+		}
+
+		.vid-item:hover {
+			background: #eee;
+			cursor: pointer;
+		}
+
+		.arrows {
+			position:relative;
+			width: 100%;
+			height: 40px;
+		}
+
+		.arrow-left {
+			color: #fff;
+			position: absolute;
+			background: #777;
+			padding: 15px;
+			left: -25px;
+			top: -130px;
+			z-index: 99;
+			cursor: pointer;
+		}
+
+		.arrow-right {
+			color: #fff;
+			position: absolute;
+			background: #777;
+			padding: 15px;
+			right: -25px;
+			top: -130px;
+			z-index:100;
+			cursor: pointer;
+		}
+
+		.arrow-left:hover {
+			background: #CC181E;
+		}
+
+		.arrow-right:hover {
+			background: #CC181E;
+		}
+
+
+		@media (max-width: 624px) {
+			body {
+				margin: 15px;
+			}
+			.caption {
+				margin-top: 40px;
+			}
+			.vid-list-container {
+				padding-bottom: 20px;
+			}
+
+			/* reposition left/right arrows */
+			.arrows {
+				position:relative;
+				margin: 0 auto;
+				width:96px;
+			}
+			.arrow-left {
+				left: 0;
+				top: -17px;
+			}
+
+			.arrow-right {
+				right: 0;
+				top: -17px;
+			}
+		}
+
+  	</style>
+
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">BluNET <em>- Home of Ultimate Twitch Bot</em></a></h1>
+						<ul class="icons">
+							<li><a href="https://twitter.com/sBlueS2" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/seeingblues2" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.youtube.com/user/SeeingBlue" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+							<li><a href="https://www.twitch.tv/SeeingBlue" class="icon fa-twitch"><span class="label">Twitch</span></a></li>
+							<li><a href="https://www.instagram.com/SeeingBlueS2" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="http://steamcommunity.com/groups/blunet" class="icon fa-steam"><span class="label">Steam</span></a></li>
+							<li><a href="https://paypal.me/seeingblue" class="icon fa-paypal"><span class="label">Paypal</span></a></li>
+						</ul>
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="utb/index.html">Ultimate Twitch Bot</a>
+									<ul>
+										<li><a href="utb/index.html#features">Features</a></li>
+										<li><a href="utb/index.html#gallery">Gallery</a></li>
+										<li><a href="utb/index.html#download">Download</a></li>
+										<li><a href="forum/index.php?topic=2.0">Support</a></li>
+										<!--<li>
+											<a href="#">Submenu</a>
+											<ul>
+												<li><a href="#">Lorem dolor</a></li>
+												<li><a href="#">Phasellus magna</a></li>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+											</ul>
+										</li>-->
+									</ul>
+								</li>
+								<li><a target="_blank" href="http://twitch.tv/seeingblue">Twitch</a>
+									<ul><li><a href="schedule.html">Schedule</a></li></ul>
+								</li>
+								<li class="current"><a href="#">Game Reviews</a>
+									<ul>
+										<li><a href="tomb-raider.html">Tomb Raider</a></li>
+										<li><a href="metal-gear-solid-v.html">MSGV: Phantom Pain</a></li>
+										<!--<li><a href="utb/index.html#download">Download</a></li>
+										<li><a href="#">Support</a></li>
+										<!--<li>
+											<a href="#">Submenu</a>
+											<ul>
+												<li><a href="#">Lorem dolor</a></li>
+												<li><a href="#">Phasellus magna</a></li>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+											</ul>
+										</li>-->
+									</ul>
+								</li>
+								<li><a href="">Community</a>
+								<ul>
+										<!--<li><a href="#">Wiki</a></li>-->
+										<li><a href="/forum">Forums</a></li>
+										<li><a href="https://discordapp.com/invite/0oYgnrbPAnSym5s5">Discord Server</a></li>
+								</ul></li>
+								<!--<li><a href="no-sidebar.html">No Sidebar</a></li>-->
+							</ul>
+						</nav>
+				</div>
+				<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<h2>Show your support and recieve amazing benefits</h2>
+							<a href="/forum/index.php?action=profile;area=subscriptions" class="button">Subscribe Now!</a>
+						</header>
+					</div>
+				</section>
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- tombraiderMain -->
+					<ins class="adsbygoogle"
+					     style="display:block"
+					     data-ad-client="ca-pub-7742234341446384"
+					     data-ad-slot="5408537158"
+					     data-ad-format="auto"></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+						<div class="row 200%">
+							<div class="8u 12u(narrower)">
+								<div id="content">
+									<!-- Content -->
+										<article>
+											<header>
+												<h2>Metal Gear Solid V: The Phantom Pain (PC)</h2>
+												<p>V has come to...</p>
+											</header>
+											<a href="https://www.youtube.com/playlist?list=PLR9g-9auRPQCZquOS5bHqTVR7zKvYHiVI">Full Playlist</a>
+
+  		<!-- THE YOUTUBE PLAYER -->
+  		<div class="vid-container">
+		    <iframe id="vid_frame" src="https://www.youtube.com/embed/g7qRoAFb2Mk" frameborder="0" width="560" height="315"></iframe>
+		</div>
+
+		<!-- THE PLAYLIST -->
+		<div class="vid-list-container">
+	        <div class="vid-list">
+	        	
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/B5MQgjNt0Q4'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/B5MQgjNt0Q4/0.jpg"></div>
+ 	              <div class="desc">Episode 1: Phantom Limbs</div>
+ 	            </div>
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/P7fB6pIjgOw'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/P7fB6pIjgOw/0.jpg"></div>
+ 	              <div class="desc">Episode 2: Diamond Dogs</div>
+ 	            </div>
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Z4s9bLdDymY'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/Z4s9bLdDymY/0.jpg"></div>
+ 	              <div class="desc">Episode 3: A Hero's Way</div>
+ 	            </div>
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Fc8rfydLMWQ'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/Fc8rfydLMWQ/0.jpg"></div>
+ 	              <div class="desc">Episode 4: C2W</div>
+ 	            </div>
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Tsq8U3DWOWk'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/Tsq8U3DWOWk/0.jpg"></div>
+ 	              <div class="desc">Episode 5: Over The Fence</div>
+ 	            </div>
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/umqMkGjBIag'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/umqMkGjBIag/0.jpg"></div>
+ 	              <div class="desc">Episode 6: Where do the bees sleep?</div>
+ 	            </div>
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/zRUgzrJGylw'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/zRUgzrJGylw/0.jpg"></div>
+ 	              <div class="desc">Episode 7: Red Brass</div>
+ 	            </div>
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/JMjzP4bnLO0'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/JMjzP4bnLO0/0.jpg"></div>
+ 	              <div class="desc">Episode 8: Occupation Forces</div>
+ 	            </div>
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/CeATaTjuKUQ'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/CeATaTjuKUQ/0.jpg"></div>
+ 	              <div class="desc">Episode 9: Backup, Back Down</div>
+ 	            </div>
+ 	            <!--<div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi//0.jpg"></div>
+ 	              <div class="desc">Episode : </div>
+ 	            </div>-->
+	 	    </div>
+        </div>
+
+        <!-- LEFT AND RIGHT ARROWS -->
+        <div class="arrows">
+        	<div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+        	<div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+        </div>
+
+											<p>This game series is a classic, without a doubt. Right off the bat I am already biased with nostalgia. Before I ever knew anything about this game
+												I already knew I would be playing it, and I would probably enjoy it unless they just done something awful. So will MGSV:TTP meet, exceed, or fail my expectations?
+												We shall find out...</p>
+
+											<h2>Full Review and Conclusion</h2>
+											<p>I felt like it was important to judge this game on atleast 3 points. Gameplay, is it fun to play, does it keep you interested?
+												Stability, how well does the game play, how often do you run into bugs or crashes? Longevity, since this is an open world game, how long can it really keep me interested?</p>
+											
+											<h3>Gameplay: <b>7</b></h3>
+											<p>I knew what kind of gameplay to expect from a Metal Gear game, but this is the first time the series has attempted an Open World approach. I gotta say,
+												it meshed very well. I will admit there is more open style environments as opposed to the in-base environments of previous games and that concerned me a little.
+												But after playing the game I can say it still felt like a Metal Gear game.</p>
+											<p>The missions were fun, I enjoyed all of them, the first time around. I gave gameplay a 7 not because the stories were bad, or not fun, but because they forced me to
+												play them more than once in a harder mode just to continue the story. This really upset me for a couple of reasons. First of all I do not like before forced to replay something.
+												Additionally I do not like being forced to replay something harder than it was before, just to continue my story. Some levels were so difficult their second time around that I know 
+												some people will not be able to complete this story, and to me that is very unfair for more than one reason. You can't boast 50+ missions when 5-10 of them are repeats and I feel sorry for all the people who
+												paid full price and will never be able to complete the story on their own.</p>
+											<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+											<!-- MSGArticle -->
+											<ins class="adsbygoogle"
+											     style="display:block"
+											     data-ad-client="ca-pub-7742234341446384"
+												 data-ad-slot="1357637156"
+										     	 data-ad-format="auto"></ins>
+											<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+											</script>
+											<h3>Stability: <b>10</b></h3>
+											<p>There really is not much to say here. The game was extremely stable, bug free, and smooth. I don't think you could ask for better quality code here. I personally did not experience a single crash or bug that I can recall.
+												The game ran very smooth, looked beautful and performed amazingly. 10 out of 10 here.</p>
+											
+											<h3>Longevity: <b>6</b></h3>
+											<p>Being an open world game I expected a little longer experience than your average single player game. There is no shortage of things to do in Metal Gear Solid V: The Phantom Pain. Especially if you are a completionist, I am not.
+												I knew this would happen and I was right. Once I completed the main story I lost interest. I played the base-to-base assaults and those are fun, but after awhile they feel repeatative and doesn't hold attention for very long.
+												Also Metal Gear Online was not avaliable on PC at the time. So to be an open world game there is no longevitiy or replayability to me. This turned into the same story mode based game with an open world that ended when the main story did.
+												There is nothing to really change or evolve the open world to keep you playing.</p>
+											
+											<h2>Overall: <b>8</b></h2>
+											<p>So I give this game an 8. That's good in my book. This is a quality AAA title hands down. If you're a Metal Gear fan you're still going to love this game. It's just
+												such a great quality game that despite my upset over the repeating missions, I still give it a very high rating, thumbs up, and a recommend.</p>
+											<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+											<!-- tombraiderMain2 -->
+											<ins class="adsbygoogle"
+											     style="display:block"
+												 data-ad-client="ca-pub-7742234341446384"
+											     data-ad-slot="7943201159"
+											     data-ad-format="auto"></ins>
+											<script>
+												(adsbygoogle = window.adsbygoogle || []).push({});
+											</script>
+										</article>
+								</div>
+							</div>
+							
+							<div class="4u 12u(narrower)">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+
+										<section>
+											<h3>About</h3>
+											<p>All reviews here are submitted by SeeingBlue. All opinions are his alone. Games are rated on various aspects like gameplay, stability, longivity, etc... All games a played live on Twitch before being highlighted and reviewed here.</p>
+											<footer>
+												<a href="tomb-raider.html" class="button">Previous: Tomb Raider</a>
+											</footer>
+										</section>
+
+										<section>
+											<h3>Other Game Reviews</h3>
+											<ul class="links">
+												<li><a href="tomb-raider.html">Tomb Raider</a></li>
+												<!--<li><a href="#">Semper mod quis eget mi dolore</a></li>
+												<li><a href="#">Consequat etiam lorem phasellus</a></li>
+												<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+												<li><a href="#">Semper mod quisturpis nisi</a></li>-->
+											</ul>
+											<footer>
+												<!--<a href="#" class="button">Next: None</a>-->
+											</footer>
+											<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+											<!-- tombraiderSidebar -->
+											<ins class="adsbygoogle"
+											     style="display:block"
+											     data-ad-client="ca-pub-7742234341446384"
+											     data-ad-slot="9419934356"
+											     data-ad-format="auto"></ins>
+											<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+											</script>
+										</section>
+
+								</div>
+							</div>
+					</div>
+					</div>
+				</section>
+									<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<h2>Show your support and recieve amazing benefits</h2>
+							<a href="/forum/index.php?action=profile;area=subscriptions" class="button">Subscribe Now!</a>
+						</header>
+					</div>
+				</section>
+			<!-- Footer -->
+				<div id="footer">
+
+					<!--<div class="container">
+						<div class="row">
+							<section class="3u 6u(narrower) 12u$(mobilep)">
+								<h3>Links to Stuff</h3>
+								<ul class="links">
+									<li><a href="#">Mattis et quis rutrum</a></li>
+									<li><a href="#">Suspendisse amet varius</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum accumsan dolor</a></li>
+									<li><a href="#">Mattis rutrum accumsan</a></li>
+									<li><a href="#">Suspendisse varius nibh</a></li>
+									<li><a href="#">Sed et dapibus mattis</a></li>
+								</ul>
+							</section>
+							<section class="3u 6u$(narrower) 12u$(mobilep)">
+								<h3>More Links to Stuff</h3>
+								<ul class="links">
+									<li><a href="#">Duis neque nisi dapibus</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum accumsan sed</a></li>
+									<li><a href="#">Mattis et sed accumsan</a></li>
+									<li><a href="#">Duis neque nisi sed</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum amet varius</a></li>
+								</ul>
+							</section>
+							<section class="6u 12u(narrower)">
+								<h3>Get In Touch</h3>
+								<form>
+									<div class="row 50%">
+										<div class="6u 12u(mobilep)">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="6u 12u(mobilep)">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<ul class="actions">
+												<li><input type="submit" class="button alt" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div>-->
+
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/sBlueS2" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/seeingblues2" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.youtube.com/user/SeeingBlue" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+							<li><a href="https://www.twitch.tv/SeeingBlue" class="icon fa-twitch"><span class="label">Twitch</span></a></li>
+							<li><a href="https://www.instagram.com/SeeingBlueS2" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="http://steamcommunity.com/groups/blunet" class="icon fa-steam"><span class="label">Steam</span></a></li>
+							<li><a href="https://paypal.me/seeingblue" class="icon fa-paypal"><span class="label">Paypal</span></a></li>
+						</ul>
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; BluNET. All rights reserved</li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+			$(document).ready(function () {
+    $(".arrow-right").bind("click", function (event) {
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollLeft: "+=336"
+        }, 750);
+    });
+    $(".arrow-left").bind("click", function (event) {
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollLeft: "-=336"
+        }, 750);
+    });
+});
+</script>
+			<script>
+  				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  				ga('create', 'UA-4636650-2', 'auto');
+  				ga('send', 'pageview');
+
+			</script>
+
+	</body>
+</html>
