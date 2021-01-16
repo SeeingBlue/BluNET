@@ -8,42 +8,47 @@ import topbox from "../json/topBox";
 import bottombox1 from "../json/bottomBox1";
 import bottombox2 from "../json/bottomBox2";
 
-export default function Home() {
-  return (
-    <React.Fragment>
-      <Header activekey="/" />
-      <Cta
-        h2="Show your support today!"
-        url="https://www.paypal.me/seeingblue"
-        text="Support"
-      />
-      <section className="wrapper style1">
-        <div className="container">
-          <div className="row 200%">
-            <Boxrow boxarray={topbox} />
+class Home extends Component {
+  render() {
+    return (
+      <React.Fragment>
+      <div id="page-wrapper">
+        <Header activekey="/" />
+        <Cta
+          h2="Show your support today!"
+          url="https://www.paypal.me/seeingblue"
+          text="Support"
+        />
+        <section className="wrapper style1">
+          <div className="container">
+            <div className="row 200%">
+              <Boxrow boxarray={topbox} />
+            </div>
           </div>
+        </section>
+        <Bigheader
+          h2text="Why Ultimate Twitch Bot?"
+          text="Besides being free here are a few other amazing features."
+        />
+        <section className="wrapper style1">
+          <div className="container">
+            <div className="row">
+              <Boxrow boxarray={bottombox1} />
+            </div>
+            <div className="row">
+              <Boxrow boxarray={bottombox2} />
+            </div>
+          </div>
+        </section>
+        <Cta
+          h2="Show your support today!"
+          url="https://www.paypal.me/seeingblue"
+          text="Support"
+        />
+        <Footer />
         </div>
-      </section>
-      <Bigheader
-        h2text="Why Ultimate Twitch Bot?"
-        text="Besides being free here are a few other amazing features."
-      />
-      <section className="wrapper style1">
-        <div className="container">
-          <div className="row">
-            <Boxrow boxarray={bottombox1} />
-          </div>
-          <div className="row">
-            <Boxrow boxarray={bottombox2} />
-          </div>
-        </div>
-      </section>
-      <Cta
-        h2="Show your support today!"
-        url="https://www.paypal.me/seeingblue"
-        text="Support"
-      />
-      <Footer />
-    </React.Fragment>
-  );
+      </React.Fragment>
+    );
+  }
 }
+export default Home

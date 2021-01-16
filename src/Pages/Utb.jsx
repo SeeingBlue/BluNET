@@ -14,7 +14,7 @@ class Utb extends Component {
         const bottombox1 = [{
             section: '6u 12u(narrower)',
             div: 'box post',
-            icon: <FontAwesomeIcon icon={['fas', 'money-bill-alt']}/>,
+            icon: <FontAwesomeIcon icon={['fas', 'money-bill-alt']} />,
             left: true,
             boxurltext: 'Loyalty System',
             boxurl: '',
@@ -23,7 +23,7 @@ class Utb extends Component {
         {
             section: '6u 12u(narrower)',
             div: 'box post',
-            icon: <FontAwesomeIcon icon={['fas', 'users']}/>,
+            icon: <FontAwesomeIcon icon={['fas', 'users']} />,
             left: true,
             boxurltext: 'Tiered Viewergroups',
             boxurl: '',
@@ -34,7 +34,7 @@ class Utb extends Component {
         const bottombox2 = [{
             section: '6u 12u(narrower)',
             div: 'box post',
-            icon: <FontAwesomeIcon icon={['fas', 'terminal']}/>,
+            icon: <FontAwesomeIcon icon={['fas', 'terminal']} />,
             left: true,
             boxurltext: 'Custom Commands',
             boxurl: '',
@@ -43,7 +43,7 @@ class Utb extends Component {
         {
             section: '6u 12u(narrower)',
             div: 'box post',
-            icon: <FontAwesomeIcon icon={['fas', 'gift']}/>,
+            icon: <FontAwesomeIcon icon={['fas', 'gift']} />,
             left: true,
             boxurltext: 'Drawing/Giveaway System',
             boxurl: '',
@@ -54,7 +54,7 @@ class Utb extends Component {
         const bottombox3 = [{
             section: '6u 12u(narrower)',
             div: 'box post',
-            icon: <FontAwesomeIcon icon={['fas', 'gamepad']}/>,
+            icon: <FontAwesomeIcon icon={['fas', 'gamepad']} />,
             left: true,
             boxurltext: 'Gambling & Betting Games',
             boxurl: '',
@@ -63,7 +63,7 @@ class Utb extends Component {
         {
             section: '6u 12u(narrower)',
             div: 'box post',
-            icon: <FontAwesomeIcon icon={['fas', 'balance-scale']}/>,
+            icon: <FontAwesomeIcon icon={['fas', 'balance-scale']} />,
             left: true,
             boxurltext: 'Voting',
             boxurl: '',
@@ -74,7 +74,7 @@ class Utb extends Component {
         const bottombox4 = [{
             section: '6u 12u(narrower)',
             div: 'box post',
-            icon: <FontAwesomeIcon icon={['fas', 'question']}/>,
+            icon: <FontAwesomeIcon icon={['fas', 'question']} />,
             left: true,
             boxurltext: 'Trivia Game',
             boxurl: '',
@@ -83,7 +83,7 @@ class Utb extends Component {
         {
             section: '6u 12u(narrower)',
             div: 'box post',
-            icon: <FontAwesomeIcon icon={['fas', 'wrench']}/>,
+            icon: <FontAwesomeIcon icon={['fas', 'wrench']} />,
             left: true,
             boxurltext: 'Channel Title & Game',
             boxurl: '',
@@ -94,7 +94,7 @@ class Utb extends Component {
         const bottombox5 = [{
             section: '6u 12u(narrower)',
             div: 'box post',
-            icon: <FontAwesomeIcon icon={['fas', 'music']}/>,
+            icon: <FontAwesomeIcon icon={['fas', 'music']} />,
             left: true,
             boxurltext: 'Song Request',
             boxurl: '',
@@ -103,52 +103,55 @@ class Utb extends Component {
         {
             section: '6u 12u(narrower)',
             div: 'box post',
-            icon: <FontAwesomeIcon icon={['fas', 'comments']}/>,
+            icon: <FontAwesomeIcon icon={['fas', 'comments']} />,
             left: true,
             boxurltext: 'Revlo CSV Support',
             boxurl: '',
             boxtext: "You can import your old Revlo csv file so all your viewers get their old points back!"
         }
         ]
+
         return (
             <React.Fragment>
-                <Header activekey='/utb' />
-                <Cta h2="Show your support today!" url="https://www.paypal.me/seeingblue" text="Support" />
-                <Bigheader2 h1text="Ultimate Twitch Bot is a completely free loyalty bot designed to allow streamers the ability to give back to their viewers in return for watching their channel. It has many features for viewers to spend their loyalty on and keep them coming back for more." />
-                <Bigheader h2text="Features" text="Basically everything. Well... eventually." />
+                <div id="page-wrapper">
+                    <Header activekey='/utb' />
+                    <Cta h2="Show your support today!" url="https://www.paypal.me/seeingblue" text="Support" />
+                    <Bigheader2 h1text="Ultimate Twitch Bot is a completely free loyalty bot designed to allow streamers the ability to give back to their viewers in return for watching their channel. It has many features for viewers to spend their loyalty on and keep them coming back for more." />
+                    <Bigheader h2text="Features" text="Basically everything. Well... eventually." />
 
-                <section className="wrapper style1">
-                    <div className="container">
-                        <div className="row">
-                            <Boxrow boxarray={bottombox1}/>
+                    <section className="wrapper style1">
+                        <div className="container">
+                            <div className="row">
+                                <Boxrow boxarray={bottombox1} />
+                            </div>
+                            <div className="row">
+                                <Boxrow boxarray={bottombox2} />
+                            </div>
+                            <div className="row">
+                                <Boxrow boxarray={bottombox3} />
+                            </div>
+                            <div className="row">
+                                <Boxrow boxarray={bottombox4} />
+                            </div>
+                            <div className="row">
+                                <Boxrow boxarray={bottombox5} />
+                            </div>
                         </div>
-                        <div className="row">
-                            <Boxrow boxarray={bottombox2}/>
-                        </div>
-                        <div className="row">
-                            <Boxrow boxarray={bottombox3}/>
-                        </div>
-                        <div className="row">
-                            <Boxrow boxarray={bottombox4}/>
-                        </div>
-                        <div className="row">
-                            <Boxrow boxarray={bottombox5}/>
-                        </div>
-                    </div>
-                </section>
+                    </section>
 
-                <Bigheader h2text="Gallery" text="Have a look at a few screenshots." />
-                <Gallery />
-                <Bigheader h2text="Download" text="Get the latest software right here only." />
+                    <Bigheader h2text="Gallery" text="Have a look at a few screenshots." />
+                    <Gallery />
+                    <Bigheader h2text="Download" text="Get the latest software right here only." />
 
-                <section className="wrapper style1">
-                    <div className="container" align="center">
-                    <Download />
-                    </div>
-                </section>
+                    <section className="wrapper style1">
+                        <div className="container" align="center">
+                            <Download />
+                        </div>
+                    </section>
 
-                <Cta h2="Show your support today!" url="https://www.paypal.me/seeingblue" text="Support" />
-                <Footer />
+                    <Cta h2="Show your support today!" url="https://www.paypal.me/seeingblue" text="Support" />
+                    <Footer />
+                </div>
             </React.Fragment>
         );
     }
