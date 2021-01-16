@@ -1268,3 +1268,7 @@ input[type="button"].small,
 .navbar-nav a.nav-link {
   margin-left: 2em;
 }
+
+.svg-inline--fa {
+  font-size: 1.5em;
+}
